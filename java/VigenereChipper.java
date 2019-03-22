@@ -1,6 +1,14 @@
  /*
  ******************************************** VİEGNERE ŞİFRELEME ******************************************************************
-Bu şifreleme Fransız kriptograf Blaise de Vigenere'e atfedilen bir yöntemdir. Bunun gibi birden fazla şifreleme alfabesi kullanan şifreler, çoklu alfabeli (Polyalphabetic) şifreleme yöntemi olarak adlandırılır. Bu tür yöntemler frekans analizi gibi deşifre tekniklerine karşı dirençli olmakla birlikte Vigenere şifresi uzun yıllar boyu Le Chiffre Undechiffrable (kırılamaz şifre) olarak anılmıştır. Yaklaşık 200 sene sonra, 1854 yılında İngiliz kriptograf Charles Babbage tarafından kırılmıştır. Vigenere şifrelemesinin Sezar şifrelemeden en büyük farkı çoklu alfabe kullanarak şifrelemenin yapılmasıdır. Arkasında yatan mantık ise Sezar şifrelemeyle aynıdır: Belirli bir anahtara göre şifrelenmek istenen kelimedeki harfleri kaydırmak. Peki nedir bu çoklu alfabe muhabbeti? Öncelikle kelimemizi şifrelemek için herhangi bir uzunlukta anahtar kelime seçiyoruz. Ve artık elimizde şifrelemek için anahtardaki farklı harf sayısı kadar alfabe var. Seçilen anahtara göre her harf kelime içindeki sırasına göre anahtar kelimedeki harfle başlayan yeni bir alfabe oluşturularak sırayla kaydırma yapılır. 
+Bu şifreleme Fransız kriptograf Blaise de Vigenere'e atfedilen bir yöntemdir. Bunun gibi birden fazla şifreleme alfabesi
+kullanan şifreler, çoklu alfabeli (Polyalphabetic) şifreleme yöntemi olarak adlandırılır. Bu tür yöntemler frekans analizi
+gibi deşifre tekniklerine karşı dirençli olmakla birlikte Vigenere şifresi uzun yıllar boyu Le Chiffre
+Undechiffrable (kırılamaz şifre) olarak anılmıştır. Yaklaşık 200 sene sonra, 1854 yılında İngiliz kriptograf Charles Babbage 
+tarafından kırılmıştır. Vigenere şifrelemesinin Sezar şifrelemeden en büyük farkı çoklu alfabe kullanarak şifrelemenin 
+yapılmasıdır. Arkasında yatan mantık ise Sezar şifrelemeyle aynıdır: Belirli bir anahtara göre şifrelenmek istenen kelimedeki
+harfleri kaydırmak. Peki nedir bu çoklu alfabe muhabbeti? Öncelikle kelimemizi şifrelemek için herhangi bir uzunlukta anahtar
+kelime seçiyoruz. Ve artık elimizde şifrelemek için anahtardaki farklı harf sayısı kadar alfabe var. Seçilen anahtara göre her 
+harf kelime içindeki sırasına göre anahtar kelimedeki harfle başlayan yeni bir alfabe oluşturularak sırayla kaydırma yapılır. 
 
  Kısacası Metin ve Anahtar Kelimelerin harflerinin index değerler toplanarak bulunan indexi yeni harf olarak belirliyoruz.
 
