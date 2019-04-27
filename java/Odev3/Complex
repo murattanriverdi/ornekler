@@ -1,0 +1,85 @@
+package odev3;
+
+public class Complex {
+
+    private double reel;
+    private  double imaginel;
+
+    public Complex(Complex ComplexObj) {
+
+        this.reel=ComplexObj.reel;
+        this.imaginel=ComplexObj.imaginel;
+    }
+
+    public Complex(double reel, double imaginel) {
+
+        this.reel=reel;
+        this.imaginel=imaginel;
+
+    }
+
+
+
+    public void addComplex (Complex c)
+    {
+        this.reel+=c.reel;
+        this.imaginel+=c.imaginel;
+
+    }
+    public void addComplex (double reel, double imaginel)
+    {
+         this.reel+=reel;
+         this.imaginel+=imaginel;
+
+    }
+
+    public void subtractComplex (Complex c)
+    {
+        this.reel-=c.reel;
+        this.imaginel-=c.imaginel;
+    }
+
+    public void subtractComplex (double reel, double imaginel)
+    {
+        this.reel-=reel;
+        this.imaginel-=imaginel;
+    }
+
+    public void multiplyComplex (Complex c)
+    {
+
+        double reel2=(this.reel*c.reel)-(this.imaginel*c.imaginel);
+        double imaginel2=(this.reel*c.imaginel)+(this.imaginel*c.reel);
+        this.reel=reel2;
+        this.imaginel=imaginel2;
+    }
+
+    public void multiplyComplex (double reel, double imaginel)
+    {
+        double reel2=(this.reel*reel)-(this.imaginel*imaginel);
+        double imaginel2=(this.reel*imaginel)+(this.imaginel*reel);
+
+        this.reel=reel2;
+        this.imaginel=imaginel2;
+
+
+    }
+
+    public String toString()
+    {
+
+        if(reel==0){
+            return  this.imaginel+"i";
+        }
+        else if(imaginel==0){
+            return this.reel+"";
+        }
+        else{
+           return  this.reel+""+this.imaginel+"i";
+        }
+
+    }
+
+
+
+}
